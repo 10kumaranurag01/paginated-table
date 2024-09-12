@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid #f3dde1;
+}
+
+.header-div {
+  color: #7a3c48;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+section {
+  margin: 0 2rem;
+}
+
+.main-div {
+  height: 100vh;
+  background-color: #fff8f8;
+}
+
+.intro-div {
+  padding: 0 2rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.intro-div-h1 {
+  color: #7a3c48;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: #ac707c;
+  font-weight: 500;
+}
+
+.resume-link:hover {
+  color: #7a3c48;
+  text-decoration: underline;
+}
+
+.paginated-component {
+  padding: 0 2rem;
+  padding-bottom: 20px;
+}

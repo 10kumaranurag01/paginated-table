@@ -1,0 +1,59 @@
+<div class="mat-elevation-z8">
+  <div class="top-div">
+    <mat-form-field appearance="fill" class="search-bar">
+      <mat-label>Search</mat-label>
+      <input
+        matInput
+        (input)="applyFilter($event)"
+        placeholder="Search by name"
+        class="serach-input"
+      />
+    </mat-form-field>
+
+    <div class="sort-btn-div">
+      <button (click)="toggleSortOrder()" class="sort-btn">
+        Sort by Age:
+        <ng-container *ngIf="sortOrder === 'asc'">Ascending</ng-container>
+        <ng-container *ngIf="sortOrder === 'desc'">Descending</ng-container>
+        <ng-container *ngIf="sortOrder === 'none'">None</ng-container>
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading" class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <table
+    mat-table
+    [dataSource]="dataSource"
+    *ngIf="!isLoading"
+    class="table-contents"
+  >
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef>First Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="age">
+      <th mat-header-cell *matHeaderCellDef>Age</th>
+      <td mat-cell *matCellDef="let element">{{ element.age }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <mat-paginator
+    [length]="totalDataCount"
+    [pageSize]="limit"
+    [pageSizeOptions]="[5, 10, 20]"
+    (page)="onPageChange($event)"
+  >
+  </mat-paginator>
+</div>

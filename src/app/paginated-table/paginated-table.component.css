@@ -1,0 +1,68 @@
+.top-div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Style for the table container */
+.table-container {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.search-bar {
+  padding: 1rem;
+}
+
+/* Style for loading spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 316px; /* Set height to control the space taken by the spinner */
+}
+
+/* Style for mat-spinner */
+mat-spinner {
+  width: 50px;
+  height: 50px;
+}
+
+/* Additional styles for the table */
+table {
+  width: 100%;
+}
+
+th.mat-header-cell {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+td.mat-cell {
+  padding: 8px;
+}
+
+.mat-paginator {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.sort-btn-div {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sort-btn {
+  padding: 5px 10px;
+  background-color: #7a3c48;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sort-btn:hover {
+  background-color: #7b545c;
+}
