@@ -1,6 +1,10 @@
 
 # Paginated Table
 
+## Deployment
+
+This project is deployed at [Paginated Table](https://main--paginated-table-assignment.netlify.app/)
+
 ## Overview
 
 This repository contains a project for managing and displaying data in a paginated table format using Angular 18. The table supports sorting and pagination features.
