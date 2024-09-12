@@ -1,4 +1,3 @@
-Understood! Here is the `README.md` content in plain text:
 
 ---
 
