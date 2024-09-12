@@ -1,6 +1,4 @@
 
----
-
 # Paginated Table
 
 ## Overview
